@@ -1,20 +1,18 @@
-html 
-
-  {
+html {
   box-sizing: border-box;
-  font-weight: 400;
-  line-height: 1.4;
-  color: white;
 }
 
 body {
   font-family: 'Georgia', sans-serif;
   font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
   text-shadow: 2px 2px 2px rgba(5, 5, 5, 5);
   margin: 0;
 }
 
-img {
+body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -26,7 +24,7 @@ img {
   background-image: linear-gradient(360deg,
       rgba(50, 50, 180, 0.8),
       rgba(136, 136, 22, 0.7)),
-    url("https://github.com/JonLeake/survey-project2/blob/main/106397256_4123248846630_5222205517817560546_n.jpg");
+    url(https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/106397256_4123248846630_5222205517817560546_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_ohc=ra8nSxWtaVoAX_Qy_aT&_nc_ht=scontent-dfw5-2.xx&oh=00_AT_jq7CBIAlFGAdiY3Otic_2g0ylHK6b1br7MsimLFHfTg&oe=6323BCA1);
   background-size: cover;
   background-position: center;
 }
@@ -85,7 +83,7 @@ button {
 }
 
 ::placeholder {
-  color: rgba(50, 50, 180, 0.8);
+  color: rgba(50, 50, 180, 0.7);
 }
 
 .clue {
@@ -108,51 +106,52 @@ form {
   form {
     padding: 3rem;
   }
+}
 
-  .form-group {
-    margin: 0 auto 2rem auto;
-    padding: 0.5rem;
-  }
+.form-group {
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem;
+}
 
-  .form-control {
-    display: block;
-    width: 100%;
-    height: 3rem;
-    padding: 1rem 1rem;
-    color: rgba(50, 50, 180, 0.8);
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(50, 50, 180, 0.8);
-    border-radius: 0.5rem;
-  }
+.form-control {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  padding: 1rem 1rem;
+  color: rgba(50, 50, 180, 0.8);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(50, 50, 180, 0.8);
+  border-radius: 0.5rem;
 
-  .form-control:focus {
-    border-color: #000000;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(100, 2, 255, 0.25);
-  }
+}
 
-  .input-radio,
-  .input-checkbox {
-    display: inline-block;
-    margin-right: 0.1rem;
-    min-height: 1.5rem;
-    min-width: 1.5rem;
-  }
+.form-control:focus {
+  border-color: #000000;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(100, 2, 255, 0.25);
+}
 
-  .input-textarea {
-    min-height: 120px;
-    width: 100%;
-    padding: 0.5rem;
-    resize: vertical;
-  }
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.1rem;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+}
 
-  .submit-button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    background: var(--dark-green);
-    color: inherit;
-    border-radius: 2px;
-  }
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.5rem;
+  resize: vertical;
+}
 
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--dark-green);
+  color: inherit;
+  border-radius: 2px;
+}
