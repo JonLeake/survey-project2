@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-body::before {
+img {
   content: '';
   position: fixed;
   top: 0;
